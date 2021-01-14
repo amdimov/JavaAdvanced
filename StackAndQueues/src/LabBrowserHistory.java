@@ -6,11 +6,12 @@ public class LabBrowserHistory {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
+
         ArrayDeque<String> urlStack = new ArrayDeque<>();
         String currentUrl = "";
 
-       while (!input.equals("Home")){
-           if (input.equals("back")){
+        while (!input.equals("Home")){
+            if (input.equals("back")){
                 if (urlStack.isEmpty()){
                     System.out.println("no previous URLs");
                     input = scanner.nextLine();
@@ -18,15 +19,15 @@ public class LabBrowserHistory {
                 }else {
                     currentUrl = urlStack.pop();
                 }
-           }else {
-               if (!currentUrl.equals("")) {
-                   urlStack.push(currentUrl);
-               }
-               currentUrl = input;
-           }
-           System.out.println(currentUrl);
-           input = scanner.nextLine();
-       }
+            }else {
+                if (!currentUrl.equals("")){
+                    urlStack.push(currentUrl);
+                }
+                currentUrl = input;
+            }
+            System.out.println(currentUrl);
+            input = scanner.nextLine();
+        }
 
     }
 }
