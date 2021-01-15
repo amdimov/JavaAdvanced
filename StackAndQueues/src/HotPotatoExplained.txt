@@ -1,0 +1,28 @@
+Mimi Pepi Toshko
+2
+
+1)
+0:Mimi
+1:Pepi
+2:Toshko
+
+2)
+0:Pepi
+1:Toshko
+2:Mimi
+
+Remove Pepi
+
+1)
+0:Toshko
+1:Mimi
+
+2)
+0:Mimi
+1:Toshko
+
+Remove Mimi
+
+0:Toshko
+
+Last is Toshko
