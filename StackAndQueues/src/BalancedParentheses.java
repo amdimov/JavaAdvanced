@@ -20,7 +20,6 @@ public class BalancedParentheses {
             System.out.println("NO");
             return;
         }
-
         Map<Character, Character> combinationsMap = new HashMap<>();
         combinationsMap.put('(', ')');
         combinationsMap.put('[', ']');
