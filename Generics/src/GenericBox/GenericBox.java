@@ -11,6 +11,6 @@ public class GenericBox<T> {
 
     @Override
     public String toString() {
-        return String.format("%s: %s", this.value.getClass().getCanonicalName(), this.value);
+        return String.format("%s: %s", this.value.getClass().getName(), this.value);
     }
 }

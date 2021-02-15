@@ -7,7 +7,7 @@ public class Main {
         int n = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < n; i++) {
             String input = scanner.nextLine();
-            GenericBox<Integer> genericBox = new GenericBox<>(Integer.parseInt(scanner.nextLine()));
+            GenericBox<String> genericBox = new GenericBox<>(input);
             System.out.println(genericBox);
         }
     }
